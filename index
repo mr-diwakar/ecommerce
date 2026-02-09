@@ -55,7 +55,7 @@
                     </div>
 
                     <div class="product-card">
-                        <img src="https://images.unsplash.com/photo-1620799139652-715b1a5b8f76?auto=format&fit=crop&w=400&q=80"
+                    <img src="https://images.unsplash.com/photo-1593032465171-8f2f5f2b7b3f?auto=format&fit=crop&w=800&q=80"
                             alt="Leather Belt">
                         <h3>Premium Leather Belt</h3>
                         <p>$39.99</p>
@@ -95,15 +95,18 @@
                     </div>
 
                     <div class="product-card">
-                        <img src="https://images.unsplash.com/photo-1600180759025-29c1c8b65e34?auto=format&fit=crop&w=400&q=80"
-                            alt="Men Cap">
+                        <img 
+  src="https://images.unsplash.com/photo-1600180759025-29c1c8b65e34?auto=format&fit=crop&w=400&q=80"
+  alt="Men Cap"
+  referrerpolicy="no-referrer"
+  loading="lazy">
                         <h3>Classic Black Cap</h3>
                         <p>$17.99</p>
                         <button class="add-to-cart">Add to Cart</button>
                     </div>
 
                     <div class="product-card">
-                        <img src="https://images.unsplash.com/photo-1618354691211-0a10d9be0b41?auto=format&fit=crop&w=400&q=80"
+                        <img src="https://images.unsplash.com/photo-1618354691096-9d93c6c4d3c4?auto=format&fit=crop&w=800&q=80"
                             alt="Men Chain">
                         <h3>Stainless Steel Chain</h3>
                         <p>$34.99</p>
@@ -173,4 +176,3 @@
 </body>
 
 </html>
-  this is html code kuch image idhar udhar hongi  to kar lio

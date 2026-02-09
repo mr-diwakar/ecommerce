@@ -6,8 +6,9 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: #0f172a;
-    color: #e5e7eb;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
 }
 
 .container {
@@ -16,11 +17,23 @@ body {
     padding: 0 20px;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
 .header {
-    background: #020617;
+    background: #fff;
     position: sticky;
     top: 0;
     z-index: 100;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 .header .container {
@@ -31,7 +44,8 @@ body {
 }
 
 .logo h1 {
-    color: #38bdf8;
+    font-size: 1.8rem;
+    color: #007bff;
 }
 
 .navbar {
@@ -47,12 +61,12 @@ body {
 }
 
 .nav-links a {
-    color: #e5e7eb;
     font-weight: 500;
+    transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #38bdf8;
+    color: #007bff;
 }
 
 .cart-icon {
@@ -60,30 +74,43 @@ body {
 }
 
 .hero {
-    background: linear-gradient(135deg, #020617, #1e293b);
-    text-align: center;
+    background: linear-gradient(135deg, #007bff, #004ea2);
+    color: #fff;
     padding: 100px 20px;
+    text-align: center;
 }
 
 .hero h2 {
-    font-size: 2.5rem;
-    color: #38bdf8;
+    font-size: 2.6rem;
+    margin-bottom: 15px;
 }
 
 .hero p {
-    margin: 15px 0 30px;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
 .cta-button {
-    background: #38bdf8;
-    color: #020617;
-    padding: 12px 30px;
+    background: #fff;
+    color: #007bff;
+    padding: 12px 28px;
     border-radius: 6px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #f1f1f1;
 }
 
 .featured-products {
     padding: 70px 20px;
     text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 2.2rem;
+    margin-bottom: 50px;
 }
 
 .products-grid {
@@ -93,14 +120,15 @@ body {
 }
 
 .product-card {
-    background: #020617;
+    background: #f9f9f9;
     border-radius: 10px;
     overflow: hidden;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .product-card:hover {
     transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
 .product-card img {
@@ -110,27 +138,39 @@ body {
 }
 
 .product-card h3 {
+    font-size: 1.1rem;
     margin: 15px;
 }
 
 .product-card p {
-    color: #38bdf8;
-    margin-left: 15px;
+    color: #007bff;
+    font-weight: 600;
+    margin: 0 15px 15px;
 }
 
 .add-to-cart {
-    margin: 15px;
     width: calc(100% - 30px);
+    margin: 0 15px 20px;
     padding: 10px;
-    background: #38bdf8;
-    color: #020617;
     border-radius: 6px;
+    background: #007bff;
+    color: #fff;
+    transition: background 0.3s;
+}
+
+.add-to-cart:hover {
+    background: #0056b3;
 }
 
 .categories {
-    background: #020617;
+    background: #f9f9f9;
     padding: 70px 20px;
     text-align: center;
+}
+
+.categories h2 {
+    font-size: 2.2rem;
+    margin-bottom: 50px;
 }
 
 .categories-grid {
@@ -140,8 +180,10 @@ body {
 }
 
 .category-card {
-    background: #020617;
+    background: #fff;
     border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
 .category-card img {
@@ -150,44 +192,58 @@ body {
     object-fit: cover;
 }
 
+.category-card h3 {
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
 .promo {
-    background: #38bdf8;
-    color: #020617;
+    background: #007bff;
+    color: #fff;
     padding: 50px 20px;
     text-align: center;
 }
 
+.promo h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
 .footer {
-    background: #020617;
-    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    padding: 40px 20px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media h3 {
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 .social-icons {
     display: flex;
-    justify-content: center;
     gap: 20px;
+    justify-content: center;
 }
 
 .social-icons a {
-    width: 45px;
-    height: 45px;
-    background: #1e293b;
-    color: #38bdf8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    transition: opacity 0.3s;
 }
 
 .social-icons a:hover {
-    transform: translateY(-4px);
+    opacity: 0.7;
 }
 
 .copyright {
     text-align: center;
     margin-top: 20px;
-    border-top: 1px solid #1e293b;
+    border-top: 1px solid #444;
     padding-top: 15px;
 }
 
@@ -199,6 +255,7 @@ body {
 
     .navbar {
         flex-direction: column;
+        gap: 15px;
     }
 
     .hero h2 {
@@ -210,3 +267,4 @@ body {
         grid-template-columns: 1fr;
     }
 }
+ this is css code

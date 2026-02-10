@@ -46,7 +46,9 @@ nav a {
 .product-card img {
     width: 200px;
     height: 150px;
+    object-fit: cover;
 }
+
 
 button {
     background-color: #0a58ff;

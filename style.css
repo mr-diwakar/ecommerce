@@ -68,6 +68,30 @@ button {
     padding: 15px;
     margin: 10px;
 }
+.categories {
+    text-align: center;
+    padding: 20px;
+}
+
+.category-card {
+    display: inline-block;
+    background: white;
+    margin: 15px;
+    padding: 10px;
+    width: 180px;
+    border-radius: 8px;
+}
+
+.category-card img {
+    width: 160px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.category-card h3 {
+    margin-top: 10px;
+}
+
 
 footer {
     background: black;
